@@ -68,7 +68,7 @@ mod events;
 pub mod extrinsic;
 mod frame;
 mod metadata;
-mod rpc;
+pub mod rpc;
 mod runtimes;
 mod subscription;
 
