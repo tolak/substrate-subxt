@@ -68,7 +68,7 @@ mod events;
 pub mod extrinsic;
 mod frame;
 mod metadata;
-pub mod rpc;
+mod rpc;
 mod runtimes;
 mod subscription;
 
@@ -170,7 +170,7 @@ impl<T: Runtime> ClientBuilder<T> {
 
 /// Client to interface with a substrate node.
 pub struct Client<T: Runtime> {
-    rpc: Rpc<T>,
+    pub rpc: Rpc<T>,
     genesis_hash: T::Hash,
     metadata: Metadata,
     runtime_version: RuntimeVersion,
