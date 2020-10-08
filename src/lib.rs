@@ -170,6 +170,7 @@ impl<T: Runtime> ClientBuilder<T> {
 
 /// Client to interface with a substrate node.
 pub struct Client<T: Runtime> {
+    /// shut up
     pub rpc: Rpc<T>,
     genesis_hash: T::Hash,
     metadata: Metadata,
